@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CodeBloom is a cute, practical Git learning garden for first-time open source contributors."
+    />
+    <meta name="theme-color" content="#f889ad" />
+    <title>CodeBloom | Learn Git gently</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='12' r='11' fill='%23ffb6cc'/%3E%3Ccircle cx='52' cy='32' r='11' fill='%23ffd0de'/%3E%3Ccircle cx='32' cy='52' r='11' fill='%23ffb6cc'/%3E%3Ccircle cx='12' cy='32' r='11' fill='%23ffd0de'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23fff5b8'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="CodeBloom home">
+        <span class="brand-flower" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><i></i>
+        </span>
+        <span>Code<span>Bloom</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#learn" data-nav="learn">Git garden</a>
+        <a href="#lab" data-nav="lab">Practice lab</a>
+        <a href="#explore" data-nav="explore">Explore repos</a>
+        <a href="#roadmap" data-nav="roadmap">Roadmap</a>
+        <a href="#resources" data-nav="resources">Resources</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon-button search-trigger" type="button" aria-label="Open search">
+          <span class="icon icon-search"></span>
+          <kbd>Ctrl K</kbd>
+        </button>
+        <button class="icon-button theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="icon icon-moon"></span>
+        </button>
+        <a class="profile-link" href="#dashboard" aria-label="Open your progress dashboard">
+          <span class="avatar-mini">CB</span>
+          <span>My garden</span>
+        </a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-panel" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#learn">Git garden</a>
+        <a href="#lab">Practice lab</a>
+        <a href="#explore">Explore repos</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#resources">Resources</a>
+        <a href="#dashboard">My garden</a>
+      </nav>
+    </div>
+
+    <aside class="mascot-dock mascot-left" aria-label="Git fun fact companion">
+      <div class="fact-bubble">
+        <small>Petal's tiny Git fact</small>
+        <p data-fact-text></p>
+        <button type="button" data-next-fact>Tell me another</button>
+      </div>
+      <button class="mascot mascot-flower" type="button" data-next-fact aria-label="Show another Git fact">
+        <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span>
+        <span class="petal p4"></span><span class="petal p5"></span>
+        <span class="mascot-face"><i></i><i></i><b></b></span>
+        <span class="stem"></span><span class="leaf"></span>
+      </button>
+    </aside>
+
+    <aside class="mascot-dock mascot-right" aria-label="Git encouragement companion">
+      <div class="fact-bubble">
+        <small>Sprig's Git whisper</small>
+        <p data-fact-text></p>
+        <button type="button" data-next-fact>New fact please</button>
+      </div>
+      <button class="mascot mascot-sprout" type="button" data-next-fact aria-label="Show another Git fact">
+        <span class="sprout-leaf l1"></span><span class="sprout-leaf l2"></span>
+        <span class="sprout-head"><i></i><i></i><b></b></span>
+        <span class="sprout-body"><i></i><i></i></span>
+      </button>
+    </aside>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer>
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-flower" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><i></i>
+        </span>
+        <span>Code<span>Bloom</span></span>
+      </a>
+      <p>Learn in small commits. Grow one branch at a time.</p>
+      <div>
+        <a href="#learn">Learn</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#resources">Resources</a>
+      </div>
+    </footer>
+
+    <div class="command-palette" role="dialog" aria-modal="true" aria-label="Search CodeBloom" aria-hidden="true">
+      <div class="palette-card">
+        <div class="palette-search">
+          <span class="icon icon-search"></span>
+          <input id="global-search" type="search" placeholder="Search lessons, commands, resources..." autocomplete="off" />
+          <kbd>Esc</kbd>
+        </div>
+        <div class="palette-results" id="palette-results"></div>
+      </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
