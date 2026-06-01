@@ -2,6 +2,9 @@
 
 CodeBloom is a self-contained Git learning garden for first-time open source contributors. It combines a soft baby-pink interface with practical Git lessons, saved progress, a guided command lab, a pull-request roadmap, a curated repository explorer, and rotating Git facts from two CSS-drawn side companions.
 
+## Live Demo
+🌐 https://lifeops-three.vercel.app/
+
 ## Open the app
 
 You can open `index.html` directly in a browser. For the most reliable local experience, serve the folder with any static server:
